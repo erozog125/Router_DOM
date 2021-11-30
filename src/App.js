@@ -4,8 +4,7 @@ import React from "react";
 import {
   BrowserRouter as Router,
   Switch,
-  Route,  
-  Link,
+  Route,    
 } from "react-router-dom";
 
 import { Home } from './Components/Page/Home/Home';
@@ -16,10 +15,10 @@ function App() {
     <div className="App">
       <Router>               
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/segundaPage">
+          <Route exact path="/segundaPage">
             <Page2 />          
           </Route>
         </Switch>      
